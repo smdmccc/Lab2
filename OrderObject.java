@@ -11,12 +11,12 @@ import java.security.NoSuchAlgorithmException;
 public class OrderObject   {
    String name = "";
    int ticketQuantity = 0;
+   String orderID = "";
       
    public OrderObject(String n, int tq)  {
       name = n;
       ticketQuantity = tq;
       String hashString = n + tq;      
-      String orderID = "";
       System.out.println(orderID);
       orderID+= hashString.hashCode();
       System.out.println(hashString);
