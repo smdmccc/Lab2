@@ -17,7 +17,6 @@ public class OrderObject   {
       name = n;
       ticketQuantity = tq;
       String hashString = n + tq;      
-      System.out.println(orderID);
       orderID+= hashString.hashCode();
       System.out.println(hashString);
    }
